@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- ******** HEAD ******** -->
+    <head>
+        <!-- Stylesheets --->
+        <!--
+            Har brugt stylesheets og ikoner fra følgende sider:
+            https://www.w3schools.com/w3css/w3css_templates.asp
+            https://www.w3schools.com/icons/icons_reference.asp 
+        -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="function.js"></script>
+    </head>
+
+    <!-- ******** BODY ******** -->
+    <body>
+        <!-- ******** HEADER ******** -->
+        <div id="header">
+            <img src="/images/header-icon.png" class="w3-left" style="height: 45px; padding: 0px; margin: -3px; margin-left: 6px;">
+            <div id="tabs">
+                <a href="#" id="logOut" class="right button">Log out</a>
+            </div>
+            <div class="w3-container w3-red w3-center" id="internetAlert" hidden>
+                <a>Could not connect. Please check your internet connection. <a href="data.html">Click here to retry</a></a>
+            </div>
+        </div>
+
+        <!-- ******** HOVEDINHOLD ******** -->
+        <div class="w3-display-middle" style="top: 50%;">
+            <div style="height:200px; width:470px;" >
+                <div contenteditable="true" class="textarea" id="dataText" placeholder="Write your message here. Everything will be synchronized automatically."></div>
+                <div style="text-align: right; position:absolute;  bottom:18px; right: -28px; display: inline-block;" class="timeStamp">
+                    <p id="timeStamp"><i style="font-size:15px;" id="statusSymbol"></i></p>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <div class="overlay w3-text-white" id="fileOverlay">
+            <div class="w3-display-middle w3-display-container">
+                <p><i id="fileStatus" style="font-size:60px;"></i></p>
+            </div>
+            <div class="w3-display-middle" style="top: 62%;">
+                <p id="fileText" style="color: white; text-align: middle;"></p>
+            </div>
+        </div>
+        <div class="w3-display-middle" style="top: 76%; text-align:center;">
+            <div style="position: relative; width: 500px;">
+                <form method="POST" enctype="multipart/form-data" id="fileForm">
+                    <input type="file" id="fileInput" name="file" hidden>
+                    <input type="submit" value="Submit" id="fileSubmit"hidden>
+                </form>
+                <label for="fileInput" class="labelFile button" style="left: 50px;">Choose file to upload...</label>
+            </div>
+        </div>
+        <div class="w3-display-middle" style="top: 90%;">
+            <a id="downloadFile" class="button" style="padding-left 100px;" hidden download></a>
+        </div>
+    </body>
+</html>

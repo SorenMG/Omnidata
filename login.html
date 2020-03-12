@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- ******** HEAD ******** -->
+    <head>
+        <!-- Stylesheets --->
+        <!--
+            Har brugt stylesheets og ikoner fra følgende sider:
+            https://www.w3schools.com/w3css/w3css_templates.asp
+            https://www.w3schools.com/icons/icons_reference.asp 
+        -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+        <script type="text/javascript" src="function.js"></script>
+        
+    </head>
+    
+    <!-- ******** BODY ******** -->
+    <body>
+        <!-- ******** HEADER ******** -->
+        <div id="header">
+            <img src="/images/header-icon.png" class="w3-left" style="height: 45px; padding: 0px; margin: -3px; margin-left: 6px;">
+            <div id="tabs">
+                <a href="start.html" id="login" class="right button"><i class="fa fa-angle-left"></i> Back</a>
+            </div>
+            <div id="internetAlert" hidden>
+                <a>Could not connect. Please check your internet connection. <a href="login.html">Click here to retry</a></a>
+            </div>
+        </div>
+        
+        <!-- ******** LOGIN FORM ******** -->
+        <div class="w3-display-middle">
+            <div id="message-color" class="w3-center">
+                <a class="messageText" id="message" style="text-align: center;"></a>
+            </div>
+            <form id="loginForm">
+                <input id="formState" hidden>
+
+                <label>Email</label>
+                <input class="input" type="text" id="email" style="font-family: Arial">
+
+                <br>
+
+                <label>Password</label>
+                <input class="input" type="password" id="password" style="font-family: Arial">
+
+                <button id="submit" class="transparent-button right"></button>
+            </form>
+        </div>
+    </body>
+</html>

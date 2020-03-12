@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- ******** HEAD ******** -->
+    <head>
+        <!-- Stylesheets --->
+        <!--
+            Har brugt stylesheets og ikoner fra følgende sider:
+            https://www.w3schools.com/w3css/w3css_templates.asp
+            https://www.w3schools.com/icons/icons_reference.asp 
+        -->
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="function.js"></script>
+        <script type="text/javascript" src="start.js"></script>
+    </head>
+    
+    <!-- ******** BODY ******** -->
+    <body>
+        <!-- ******** HEADER ******** -->
+        <div id="header">
+            <img src="/images/header-icon.png" class="w3-left" style="height: 45px; padding: 0px; margin: -3px; margin-left: 6px;">
+            <div id="tabs">
+                <div>
+                    <a href="#" id="login" class="right button">Sign in</a>
+                </div>
+            </div>
+            <div class="w3-container w3-red w3-center" id="internetAlert" hidden>
+                <a>Could not connect. Please check your internet connection. <a href="start.html">Click here to retry</a></a>
+            </div>
+        </div>
+        
+        <!-- ******** HOVEDINDHOLD ******** -->
+        <div class="w3-display-middle">
+            <img src="images/hero.png" style="height: 150px;">
+            <div class="middle" style="text-align: center; word-brak: break-all; width: 75%;">
+                <p>Moving links, text and files made easier than ever.</p>
+            </div>
+            <a class="button middle" id="signUp" href="#" style="width: 150px;">Sign up <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </body>
+</html>
